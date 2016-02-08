@@ -1,0 +1,64 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,800,900);
+$calcColor: #C0C0C0;
+$buttonColor: #D3D3D3;
+$screenColor: #F0FACA;
+
+$proxima: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
+
+ *, :after, :before {
+ 	  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin font($weight, $family: $body, $size: 1em, $color: #fafafa) {
+	font-size: $size;
+	font-family: $family;
+	font-weight: $weight;
+	color: $color;
+}
+@mixin transition() {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	 -o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+html {
+  body {
+    #calculator {
+      display: block;
+      width: 426px;
+      height: 520px;
+      background-color: $calcColor;
+      padding: 20px;
+      #keys {
+        button {
+          @include font(500, $proxima, 27px, #3e3e3e);
+          padding: 10px 20px;
+          width: 90px;
+          margin-right: 4px;
+          margin-bottom:7px;
+          display: inline-block;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+        button.zero {
+          width: 188px;
+        }
+        button.eq {
+          height: 100px;
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,800,900);
+*, :after, :before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+html body #calculator {
+  display: block;
+  width: 426px;
+  height: 520px;
+  background-color: #C0C0C0;
+  padding: 20px; }
+  html body #calculator #keys button {
+    font-size: 27px;
+    font-family: "Proxima Nova", "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #3e3e3e;
+    padding: 10px 20px;
+    width: 90px;
+    margin-right: 4px;
+    margin-bottom: 7px;
+    display: inline-block; }
+    html body #calculator #keys button:last-child {
+      margin-right: 0; }
+  html body #calculator #keys button.zero {
+    width: 188px; }
+  html body #calculator #keys button.eq {
+    height: 100px; }
