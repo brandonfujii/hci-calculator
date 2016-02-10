@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <title>Calculator</title>
   <link rel="stylesheet" href="css/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
-  <h1>EECS 330: Calculator</h1>
+  <h2>EECS 330: Calculator</h2>
   <div id="calculator" class="clearfix">
     <div id="screen">
       <div class="display">
-        <h1>4,856,995.2</h1>
+        <ul>
+          <li></li>
+        </ul>
       </div>
     </div>
     <div id="keys">
@@ -21,35 +24,36 @@
         <button>MR</button>
       </div>
       <div class="row">
-        <button>C</button>
-        <button>&plusmn;</button>
+        <button class="clear-button">C</button>
+        <button class="sign-button">&plusmn;</button>
         <button>&divide;</button>
         <button>&times;</button>
       </div>
       <div class="row">
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>-</button>
+        <button class="num">7</button>
+        <button class="num">8</button>
+        <button class="num">9</button>
+        <button class="num">-</button>
       </div>
       <div class="row">
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
+        <button class="num">4</button>
+        <button class="num">5</button>
+        <button class="num">6</button>
         <button>+</button>
       </div>
       <div class="row">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
+        <button class="num">1</button>
+        <button class="num">2</button>
+        <button class="num">3</button>
         <button class="eq">=</button>
       </div>
       <div class="row">
         <button class="zero">0</button>
-        <button>.</button>
+        <button class="num">.</button>
 
       </div>
     </div>
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
