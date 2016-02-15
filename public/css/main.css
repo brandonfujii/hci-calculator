@@ -23,7 +23,7 @@ html body {
     margin: 50px auto;
     top: 50%;
     width: 426px;
-    height: 520px;
+    height: 530px;
     background: linear-gradient(to bottom, #dfdfdf 0%, #dfdfdf 17%, #acacac 65%, #acacac 100%);
     -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.4), inset -2px -2px 2px rgba(0, 0, 0, 0.4);
     -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.4), inset -2px -2px 2px rgba(0, 0, 0, 0.4);
@@ -78,15 +78,15 @@ html body {
         background-color: #bababa; }
     html body #calculator #keys .row button.zero {
       width: 188px; }
-    html body #calculator #keys .row button.eq {
-      height: 105px; }
+    html body #calculator #keys .row button#eq {
+      height: 117px; }
     html body #calculator #keys .row:nth-child(5) button {
       margin-right: 8px;
       float: left; }
-    html body #calculator #keys .row:nth-child(5) button.eq {
+    html body #calculator #keys .row:nth-child(5) button#eq {
       margin-right: 0;
       margin-bottom: 0; }
     html body #calculator #keys .row:last-child button {
       position: relative;
-      top: -49px;
+      top: -55px;
       margin-bottom: 0; }
