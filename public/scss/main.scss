@@ -88,7 +88,7 @@ html {
       #keys {
         .row {
           button {
-            @include font(500, $proxima, 27px, #3e3e3e);
+            @include font(700, $proxima, 27px, #3e3e3e);
             border: 1px solid #858482;
             background-color: $buttonColor;
             border-radius: 10px;
