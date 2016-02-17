@@ -4,6 +4,7 @@ $numButton = $(".num"),
 $signButton = $(".sign-button"),
 $decButton = $(".decimal-button"),
 $operation = $(".operation"),
+$sign = $(".sign"),
 numVal = 0,
 nextVal = 0,
 isCleared = true,
@@ -65,15 +66,19 @@ $operation.on("click", function() {
   switch($(this).attr("id")) {
     case "add":
       isAdd = true;
+      $sign.text("+");
       break;
     case "subtract":
       isSub = true;
+      $sign.text("-");
       break;
     case "multiply":
       isMult = true;
+      $sign.text("*");
       break;
-    case "divide":
+    case "divide":                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    case "divide":
       isDiv = true;
+      $sign.html("&divide;");
       break;
     default:
       if (isAdd) {
@@ -92,7 +97,7 @@ $operation.on("click", function() {
         divNums();
         isDiv = false;
       }
-
+      $sign.text("");
       next = false;
   }
 });
