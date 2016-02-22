@@ -26,34 +26,34 @@
       </div>
       <div class="row">
         <button class="clear-button">C</button>
-        <button class="sign-button">&plusmn;</button>
-        <button id="divide" class="operation">&divide;</button>
-        <button id="multiply" class="operation">&times;</button>
+        <button class="sign-button operation">&plusmn;</button>
+        <button id="divide" class="operation" data-op="divide">&divide;</button>
+        <button id="multiply" class="operation" data-op="multiply">&times;</button>
       </div>
       <div class="row">
-        <button class="num">7</button>
-        <button class="num">8</button>
-        <button class="num">9</button>
-        <button id="subtract" class="operation" class="num">-</button>
+        <button class="num" data-num=7>7</button>
+        <button class="num" data-num=8>8</button>
+        <button class="num" data-num=9>9</button>
+        <button id="subtract" class="operation" class="num" data-op="subtract">-</button>
       </div>
       <div class="row">
-        <button class="num">4</button>
-        <button class="num">5</button>
-        <button class="num">6</button>
-        <button id="add" class="operation">+</button>
+        <button class="num" data-num=4>4</button>
+        <button class="num" data-num=5>5</button>
+        <button class="num" data-num=6>6</button>
+        <button id="add" class="operation" data-op="add">+</button>
       </div>
       <div class="row">
-        <button class="num">1</button>
-        <button class="num">2</button>
-        <button class="num">3</button>
-        <button id="eq" class="operation">=</button>
+        <button class="num" data-num=1>1</button>
+        <button class="num" data-num=2>2</button>
+        <button class="num" data-num=3>3</button>
+        <button id="eq">=</button>
       </div>
       <div class="row">
-        <button class="zero num">0</button>
-        <button class="decimal-button num">.</button>
+        <button class="zero num" data-num=0>0</button>
+        <button class="decimal-button">.</button>
       </div>
     </div>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/calculator.js"></script>
 </body>
 </html>
